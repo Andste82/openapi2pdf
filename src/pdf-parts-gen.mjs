@@ -7,7 +7,7 @@ import { getTypeInfo, schemaInObjectNotation, objectToTree, objectToTableTree } 
 import { JSDOM } from 'jsdom';
 
 function markdownToPdfmake(markdown) {
-  const html = marked(markdown);
+  const html = marked(markdown, {headerIds: false});
   const { window } = new JSDOM();
   return htmlToPdfmake(html, { window });
 }

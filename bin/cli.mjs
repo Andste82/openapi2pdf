@@ -74,6 +74,7 @@ export async function generatePdf() {
     writeFileSync(argv.out, data);
   } catch (e) {
     console.error('Something went wrong! Please check your input parameters!');
+	console.log(e.message ?? e);
   }
 }
 generatePdf();

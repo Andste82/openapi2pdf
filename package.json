@@ -1,14 +1,15 @@
 {
-  "name": "openapi2pdf",
-  "version": "1.0.0",
+  "name": "@andste82/openapi2pdf",
+  "version": "1.0.1",
   "description": "openapi2pdf - Generate PDF from Open API spec",
   "contributors": [
     "Mrinmoy Majumdar <mrin9@yahoo.com>",
-    "Stefan Schubert"
+    "Stefan Schubert",
+	"andste82"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/malaupa/openapi2pdf"
+    "url": "https://github.com/Andste82/openapi2pdf"
   },
   "license": "MIT",
   "keywords": [
@@ -23,6 +24,11 @@
     "pdf",
     "swagger pdf",
     "openapi pdf"
+  ],
+  "tags": [
+    "OpenAPI",
+    "Swagger",
+    "pdf"
   ],
   "bin": {
     "openapi2pdf": "bin/cli.mjs"
