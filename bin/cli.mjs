@@ -2,7 +2,7 @@
 'use strict';
 
 import createPdf from '../src/pdf-gen.mjs';
-import { readFileSync, writeFileSync } from 'fs';
+import fse from 'fs-extra';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import SwaggerParser from '@apidevtools/swagger-parser';
@@ -73,7 +73,7 @@ export async function generatePdf() {
       },
     });
 
-    writeFileSync(argv.out, data);
+	await fse.outputFile(argv.out, data);
   } catch (e) {
     console.error('Something went wrong! Please check your input parameters!');
 	console.log(e.message ?? e);

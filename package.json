@@ -1,6 +1,6 @@
 {
   "name": "@andste82/openapi2pdf",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "openapi2pdf - Generate PDF from Open API spec",
   "contributors": [
     "Mrinmoy Majumdar <mrin9@yahoo.com>",
@@ -34,6 +34,7 @@
     "openapi2pdf": "bin/cli.mjs"
   },
   "dependencies": {
+    "fs-extra": "^10.1.0",
     "html-to-pdfmake": "^2.3.11",
     "jsdom": "^17.0.0",
     "marked": "^3.0.4",
