@@ -10,13 +10,13 @@ export default function createPdf(specUrl, options) {
 
     const pdfStyles = {
       title: { fontSize: 32 },
-      h1: { fontSize: 22 },
-      h2: { fontSize: 20 },
-      h3: { fontSize: 18 },
-      h4: { fontSize: 16 },
-      h5: { fontSize: 14 },
-      h6: { fontSize: 12, bold: true },
-      p: { fontSize: 12 },
+      h1: { fontSize: 20 },
+      h2: { fontSize: 18 },
+      h3: { fontSize: 16 },
+      h4: { fontSize: 14 },
+      h5: { fontSize: 12 },
+      h6: { fontSize: 10, bold: true },
+      p: { fontSize: 10 },
       small: { fontSize: 10 },
       sub: { fontSize: 8 },
       right: { alignment: 'right' },
@@ -103,7 +103,7 @@ export default function createPdf(specUrl, options) {
       content: allContent,
       styles: pdfStyles,
       defaultStyle: {
-        fontSize: 12,
+        fontSize: 10,
         font: 'Helvetica',
       },
     };

@@ -5,6 +5,8 @@ Converts a openapi spec file to pdf. Based on [RapiPDF](https://github.com/mrin9
 ## Features
 
 - Supports Swagger 2.0 and OpenAPI 3.0
+- Support YAML and JSON format
+- Support $ref (thx to swagger-parser)
 - Plenty of customizing options, including selection of brand colors
 
 ## Usage

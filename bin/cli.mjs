@@ -5,6 +5,7 @@ import createPdf from '../src/pdf-gen.mjs';
 import { readFileSync, writeFileSync } from 'fs';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
+import SwaggerParser from '@apidevtools/swagger-parser';
 
 const argv = yargs(hideBin(process.argv))
   .option('spec', {
@@ -20,7 +21,8 @@ const argv = yargs(hideBin(process.argv))
 
 export async function generatePdf() {
   try {
-    const data = await createPdf(JSON.parse(readFileSync(argv.spec, { encoding: 'utf-8' })), {
+    const api = await SwaggerParser.validate(argv.spec);
+    const data = await createPdf(api, {
       pdfSortTags: false,
       pdfPrimaryColor: argv.primaryColor ? argv.primaryColor : '',
       // pdfAlternateColor: '',
