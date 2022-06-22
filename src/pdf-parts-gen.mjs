@@ -1,6 +1,6 @@
 'use strict';
 
-import marked from 'marked';
+import { marked } from 'marked';
 import htmlToPdfmake from 'html-to-pdfmake';
 import { rowLinesTableLayout } from './table-layouts.mjs';
 import { getTypeInfo, schemaInObjectNotation, objectToTree, objectToTableTree } from './object-tree-gen.mjs';
