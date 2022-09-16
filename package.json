@@ -1,6 +1,6 @@
 {
   "name": "@andste82/openapi2pdf",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "openapi2pdf - Generate PDF from Open API spec",
   "contributors": [
     "Mrinmoy Majumdar <mrin9@yahoo.com>",
@@ -35,9 +35,9 @@
   },
   "dependencies": {
     "fs-extra": "^10.1.0",
-    "html-to-pdfmake": "^2.4.3",
+    "html-to-pdfmake": "^2.4.6",
     "jsdom": "^20.0.0",
-    "marked": "^4.0.17",
+    "marked": "^4.1.0",
     "pdfmake": "^0.2.5",
     "swagger-client": "^3.18.5",
     "swagger-parser": "^10.0.3",
@@ -46,13 +46,14 @@
   },
   "scripts": {
     "lint": "eslint ./src/**/*.mjs",
-    "lint-fix": "eslint --fix ./src/**/*.mjs"
+    "lint-fix": "eslint --fix ./src/**/*.mjs",
+	"test": "node bin/cli.mjs --spec ./test/petstore.yaml --out ./test/gen/petstore.pdf"
   },
   "devDependencies": {
-    "eslint": "^8.18.0",
+    "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1"
   },
   "engines": {
