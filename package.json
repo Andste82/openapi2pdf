@@ -1,6 +1,6 @@
 {
   "name": "@andste82/openapi2pdf",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "openapi2pdf - Generate PDF from Open API spec",
   "contributors": [
     "Mrinmoy Majumdar <mrin9@yahoo.com>",
