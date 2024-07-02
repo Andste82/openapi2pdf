@@ -1,5 +1,3 @@
-'use strict';
-
 import { marked } from 'marked';
 import htmlToPdfmake from 'html-to-pdfmake';
 import { rowLinesTableLayout } from './table-layouts.mjs';
@@ -158,8 +156,8 @@ function getParameterTableDef(parameters, paramType, localize, includeExample = 
             ? param.example
               ? param.example
               : param.examples && param.examples[0]
-              ? param.examples[0]
-              : ''
+                ? param.examples[0]
+                : ''
             : '',
           style: ['small'],
           margin: [0, 2, 0, 0],
@@ -185,8 +183,8 @@ function getParameterTableDef(parameters, paramType, localize, includeExample = 
                 paramSchema.type === 'array'
                   ? paramSchema.arrayType
                   : paramSchema.format
-                  ? paramSchema.format
-                  : paramSchema.type
+                    ? paramSchema.format
+                    : paramSchema.type
               }`,
               style: ['small', 'mono'],
             },
@@ -209,8 +207,8 @@ function getParameterTableDef(parameters, paramType, localize, includeExample = 
             ? param.example
               ? param.example
               : param.examples && param.examples[0]
-              ? param.examples[0]
-              : ''
+                ? param.examples[0]
+                : ''
             : '',
           style: ['small'],
           margin: [0, 2, 0, 0],

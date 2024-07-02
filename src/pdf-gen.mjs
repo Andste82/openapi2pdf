@@ -1,5 +1,3 @@
-'use strict';
-
 import pdfMake from 'pdfmake/src/printer.js';
 import { getApiDef, getApiListDef, getInfoDef, getSecurityDef } from './pdf-parts-gen.mjs';
 import ProcessSpec from './spec-parser.mjs';

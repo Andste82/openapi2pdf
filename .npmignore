@@ -1,5 +1,4 @@
 .github
-.eslintrc.js
-.prettierrc
+eslint.config.mjs
 node_modules
 test

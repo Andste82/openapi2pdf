@@ -1,5 +1,3 @@
-'use strict';
-
 export const rowLinesTableLayout = {
   hLineWidth(i, node) {
     return i === 1 || i === node.table.body.length ? 1 : 0.5;

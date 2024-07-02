@@ -1,5 +1,3 @@
-'use strict';
-
 /* Generates an object containing type and constraint info */
 export function getTypeInfo(schema) {
   if (!schema) {
