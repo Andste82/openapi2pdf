@@ -1,0 +1,5 @@
+.github
+.eslintrc.js
+.prettierrc
+node_modules
+test
